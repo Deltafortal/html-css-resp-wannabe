@@ -138,14 +138,25 @@ img {
 
  @media screen and (max-width: 768px) {
     .container {
-        width: 370px;
+        width: 470px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-shrink: 0;
+        justify-content: center;
+    }
+
+    .col {
+        flex-basis: calc((100% - 2rem) / 3);
     }
 
  }
 
 
 
- @media screen and (max-width: 375px) {
+ @media screen and (max-width: 480px) {
     .container {
         width: 100%;
     }
